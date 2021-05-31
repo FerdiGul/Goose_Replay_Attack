@@ -1,8 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-#TESTED IN PYTHON 3.7 version
-
 from scapy.all import *
 import os
 import socket
@@ -79,7 +77,7 @@ def payload(interface):
 
 if __name__ == '__main__':
     interface = inputValues()
-    key=input("Enter that what you want bro?:\n[1]: send pcap frame\n[2]: send frame payload\n");
+    key=input("Enter that what you want?:\n[1]: send pcap frame\n[2]: send frame payload\n");
     if key == "1":        
         threading.Thread(target=replayGooseTraffic,args=(interface,)).start() #threading part when you wanna get min runtime. If scripts will improve in project, maybe we can use it.
     elif key == "2":
@@ -87,3 +85,5 @@ if __name__ == '__main__':
         #payload(interface)
     else:
         print("check your selection!")
+
+#in futurework: send payload in randomly...
