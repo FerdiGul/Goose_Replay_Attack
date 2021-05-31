@@ -64,11 +64,11 @@ def payload(interface):
     
 
     #show packet parts
-    ls(header_VLAN)
+    ls(VLAN)
     ls(message)
-    ls(header_content)
+    ls(content)
     #interface = input("\n enter interface:")
-    new_Goose_Frame = header_content/header_VLAN/message
+    new_Goose_Frame = content/VLAN/message
     #del new_Goose_Frame[header_VLAN].chksum
     print(new_Goose_Frame)
     sendp(new_Goose_Frame, iface = interface,verbose=0)
