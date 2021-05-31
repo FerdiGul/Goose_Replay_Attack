@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+#TESTED IN PYTHON 3.7 version
+
 from scapy.all import *
 import os
 import socket
