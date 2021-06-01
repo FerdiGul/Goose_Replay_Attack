@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+#TESTED IN PYTHON 3.7
 
 from scapy.all import *
 import os
